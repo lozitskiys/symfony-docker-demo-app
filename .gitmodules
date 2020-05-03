@@ -1,0 +1,3 @@
+[submodule "docker/php-fpm/wait-for-it"]
+	path = docker/php-fpm/wait-for-it
+	url = https://github.com/vishnubob/wait-for-it
