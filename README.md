@@ -1,21 +1,29 @@
-By https://dev.to/martinpham/symfony-5-development-with-docker-4hj8
+Using this repo you can run symfony PHP app in docker containers.
 
-### Install symfony
+List of services:
+1. Mariadb
+2. Php-fpm
+3. Nginx
 
-Create new directory, open it and create project skeleton (according to https://symfony.com/doc/current/setup.html)
+### Instructions
 
-##### On Linux
+1. Clone this repo and then delete .git folder.
+2. Go to root repo dir and create project skeleton (according to https://symfony.com/doc/current/setup.html)
+
+**On Linux**
 ```shell script
-docker run --rm -v $(pwd):/app composer create-project symfony/website-skeleton src
+docker run --rm -v $(pwd):/app composer create-project symfony/website-skeleton app
 ```
-##### On Windows
+**On Windows**
 ```shell script
-docker run --rm -v %CD%:/app composer create-project symfony/website-skeleton src
+docker run --rm -v %CD%:/app composer create-project symfony/website-skeleton app
 ```
 
-### And then
+Go to "docker" dir and run:
 ```shell script
 docker-compose up -d
 ```
 
-Go to http://localhost/ and you are done.
+Open http://localhost/ and you are done.
+
+Inspired by https://dev.to/martinpham/symfony-5-development-with-docker-4hj8
