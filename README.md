@@ -7,8 +7,15 @@ List of services:
 
 ### Instructions
 
-1. Clone this repo and then delete .git folder.
-2. Go to root repo dir and create project skeleton (according to https://symfony.com/doc/current/setup.html)
+Clone this repo:
+```
+git clone https://github.com/lozitskiys/symfony-docker-demo-app.git my-project
+cd my-project
+git submodule init
+git submodule update
+```
+
+Delete .git folder, then go to root repo dir and create project skeleton (according to https://symfony.com/doc/current/setup.html)
 
 **On Linux**
 ```shell script
