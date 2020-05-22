@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class LuckyController extends AbstractFOSRestController
 {
     /**
-     * @Route("/lucky/number", name="lnumber")
+     * @Route("/api/lucky/number", name="lnumber")
      */
     public function number()
     {
@@ -19,7 +19,7 @@ class LuckyController extends AbstractFOSRestController
     }
 
     /**
-     * @Rest\Post("/list", name="testlist")
+     * @Rest\Post("/api/list", name="testlist")
      */
     public function list()
     {
