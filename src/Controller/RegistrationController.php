@@ -58,7 +58,9 @@ class RegistrationController extends AbstractFOSRestController
 
         $user = new User();
         $user->setEmail($email);
-        $user->setPassword($this->encoder->encodePassword($user, $this->password()));
+        //$pass = $this->password();
+        $pass = $request->get('password');
+        $user->setPassword($this->encoder->encodePassword($user, $pass));
 
         $this->entityManager->persist($user);
         $this->entityManager->flush();
